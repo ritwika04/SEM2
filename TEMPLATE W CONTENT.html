@@ -1,0 +1,81 @@
+<html>
+<head>
+<link rel="stylesheet" href="SEARCHBAR.css">
+<body>
+<style>
+.menubar {
+    background-color: #9FCBFF;
+    display: flex; /* Already set for horizontal layout */
+    justify-content: center; /* Center links horizontally */
+    align-items: center; /* Already set for vertical centering */
+    border-radius:50px;
+	overflow:hidden;
+	text-shadow: 0 0 10px 9FCBFF;
+	box-shadow: 0 0 15px 0 #9FCBFF, 0 20px 25px 0 rgba(0, 0, 0, 0.2);
+	}
+a {float:left; padding: 15px 20px; text-decoration:none; font-size:20px; color:#171717; margin:0px 41px;}
+a:hover {background-color:black; color:white;}
+body {background-color:#171717; color:white;}
+.drop { float:left; overflow:hidden; }
+.drop:hover .dropmenubar { display:block; }
+.dropmenubar { position:absolute; display:none; }
+.dropmenubar a { background-color:#3C6A9F; color:white; text-color:white; min-width:100px; border-radius:50px; text-shadow: 0 0 10px 3C6A9F;
+	box-shadow: 0 0 15px 0 #3C6A9F, 0 20px 25px 0 rgba(0, 0, 0, 0.2); }
+.menubar a:hover { background-color:black; }
+form { float: right; }
+marquee { font-family:bahnschrift; position:relative; }
+.search { box-shadow: 0 0 15px 0 #9FCBFF, 0 20px 25px 0 rgba(0, 0, 0, 0.2); }
+.container { display: grid; align:center; width:600px; grid-template-columns: repeat(4, 1fr); grid-template-rows: repeat(7,70px); background-color:none; gap: 5px; 
+  grid-template-areas: 'header header header header'  
+                       'header header header header'  
+					   'header header header header'  
+                       'aside content content content' 
+                       'aside section section section'
+					   'aside section section section'
+					   'aside section section section';
+                        text-align:center;}
+.container > div { background-color:none; font-size: 40px; border-radius:50px;}   
+#one { grid-area: header; }
+#two { grid-area: aside;}
+#three { grid-area: content; }
+#four { grid-area: section; }
+</style>
+<title>Shopping</title>
+</head>
+<header><br>
+<form > 
+	<div class="search" style="text-align: left;">
+		<input class="search-input" type="search" placeholder="SEARCH">
+</form>
+</header>
+<img src="C:\Users\CS LAB 13\Downloads\W1.gif" height="150px" width="750px" />
+<center>
+<marquee width="1385px" scrollamount=7><font color="#9FCBFF">Summer special! <font color="red">50%</font> off on all first purchases with an additional <font color="red">10%</font> off for cosmetic products! Register for <font color="red">W Rewards</font> program today to earn points and save on every purchase!</font></marquee><br>
+<br>
+<div class="menubar" style="font-family: bahnschrift;">
+<a href="#"><b>HOME</b></a>
+		<div class="drop">
+			<a href="#"><b>CLOTHING</b></a>
+			<div class="dropmenubar"><br>
+				<br><br><a href="#"><font color="white"><b>WOMENS</b></font></a><br><br><br>
+				<a href="#"><font color="white"><b>MENS</b></font></a><br><br><br>
+				<a href="#"><font color="white"><b>CHILDRENS</font></b></a>
+			</div>
+		</div>	
+<a href="#"><b>ACCESSORIES</b></a>
+<a href="#"><b>ELECTRONICS</b></a>
+<a href="#"><b>MY CART</b></a>
+</div>
+</center>
+<center><br>
+
+<br>
+<div class="container">
+  <div id="one"><img align="left" src="C:\Users\CS LAB 13\Downloads\Brown Blue Denim Jeans Fashion Sale Website Banner (1).png" width="550px" height="207px"/></div> 
+  <div id="two"><img src="C:\Users\CS LAB 13\Downloads\ADVERTISEMENT.gif" width="160px" height="500px"/></div>  
+  <div id="three"><img src="C:\Users\CS LAB 13\Downloads\womens fashion gold.png" width="335px" height="169px"/><img src="C:\Users\CS LAB 13\Downloads\mens fashion blue.png" width="335px" height="169px"/></div>   
+  <div id="four"></div>  
+</div> 
+</center>
+</body>
+</html>
